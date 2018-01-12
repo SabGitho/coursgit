@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Frenchtrip</title>
+	        <link rel="stylesheet" href="style.css" />
+	          <style>
+      #map {
+        width: 50%;
+        height: 200px;
+        background-color: grey;
+      }
+    </style>
+
+</head>
+	 
+<body>
+	<header>
+	<div>
+	<h1>FrenchTrip : pour se retrouver</h1>
+	<nav>
+	<ul id="menu_horizontal">
+		<li><a href="accueil">Accueil</a></li>
+		<li><a href="map">LaMAP</a></li>
+		<li><a href="chat">Chat Box</a></li>
+		<li><a href="contact">Contact</a></li>
+		<li><a href="admin">Admin</a></li>
+	</ul>
+	</nav>
+	</div>
+
+	</header>
+	<section>
+		<article>
+		<div>
+		<h2>Se retrouver!</h2>
+		<div id="map"></div>
+		<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMv6vJdRRTuKVjKpMDzBYfdTJkKYbmVN4&callback=initMap">
+    </script>
+
+			<p>C'est une application grand public basée sur la géolocalisation qui permet de retrouver les ressortissants français à l'étranger, en voyage ou expatriés.</p>
+			<p>Concrètement basée sur une map interactive, en séléctionnant un pays la map affiche les personnes présentes et connectées.</p>
+		
+
+	<h2>Echanger</h2>
+
+			<p>Nous avons donc trouvé des personnes connectées on va cliquer sur son image et là on va pouvoir choisir si on veut chatter via une messagerie instantanée ou envoyer un mail.</p>
+		
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiOx7ZTeJLYG1KOz8xntEY1K1e8-YRUJZXqd9SWQTc4RBhmAuGDA" alt="image de bulle de discussion"/>
+	<h2>Partager!</h2>
+
+			<p>On peut partager ,sur un espace dédié sur l'appli des lieux, des infos pratiques, des prix etc, tout ce qui passe par la tête des travellers.
+			<ul>
+				<li>Des photos ex un lieu insolite.</li>
+				<li>Un article ou un lien vers un autre site.</li>
+				<li>Une vidéo Youtube.</li>
+				<li>Un texte ex offre d'emploi bon plan etc.</li>
+			</ul>
+		</p>
+		<p>Souhaitez-vous consulter <a href="page2.html">la page 2</a> ?</p>
+
+
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3QJN-rkkSF40TENNUVQH8AM7XznvNQ2s3y3lh__odhz_vRrdE" alt="Une plage"/>
+	</div>
+	</article>
+	</section>
+	<footer>
+		<div><p>Ce site a été créé par Sabrina HAOUES, élève à la GDBoss Academy. Session 2017.</p></div>
+	</footer>
+
+
+
+</body>
+</html>
